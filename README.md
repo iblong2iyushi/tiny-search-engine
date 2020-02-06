@@ -13,12 +13,12 @@ This module is responsible for indexing the crawled data for the query engine to
 This module is responsible to take the search string as an input,look up in the indexer to return the document id and URL in descending order based on their occurance.
 
 
-Steps to execute the modules:
-###Crawler
+### Steps to execute the modules:
+Crawler
 sudo python crawler.py <baseURL> <Destination> <Depth>
 
-###Indexer
+Indexer
 sudo python indexer.py <target_directory> <Output_filename>
 
-###Query Engine
+Query Engine
 sudo python queryEngine.py <Enter string to be searched>
