@@ -1,5 +1,8 @@
 # tiny-search-engine
 This is implementation of a tiny search engine in Python.
+This project contains 2 branches:
+### master branch: synchronous code
+### async_version branch: asyncio code
 
 This project have 3 parts:
 ### Crawler
