@@ -7,7 +7,7 @@ COUNT = 0
 def main():
     global COUNT
     if len(sys.argv) != 4:
-        print "Wrong info passed"
+        print("Wrong info passed")
         sys.exit(1)
 
     baseurl = sys.argv[1]
