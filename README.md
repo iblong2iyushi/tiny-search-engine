@@ -5,9 +5,9 @@ This is implementation of a tiny search engine in Python.
 ### async_version branch: asyncio code
 
 ## This project have 3 parts:
-### Crawler
-This module is responsible for taking in the baseURL and crawls to other URL's associated with the baseURL until the given depth.
-Also it returns the crawled websites data in the form of html file stored in the destination provided by the user.
+### Universal Crawler
+This module is responsible for taking baseURL as input and crawling to other URL's associated with the baseURL until the given depth.
+it then returns the crawled websites data in the form of html file stored in the destination provided by the user.
 
 ### Indexer
 This module is responsible for indexing the crawled data for the query engine to search and return the desired result.
