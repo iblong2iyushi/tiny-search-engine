@@ -33,8 +33,14 @@ def get_details(index, word):
         del index[word]["tot_occur"]
     return index.get(word,{}).items()
 
-def main(words):
+def main():
+    if len(sys.argv) != 2:
+        print("Wrong Info passed")
+        sys.exit(1)
+
     output = []
+    words = sys.argv[1]
+
     index = read_from_file("index.dat")
     # find the file and occurance of all files from index for a word
     for word in words.split(' '):
@@ -45,9 +51,5 @@ def main(words):
     
 
 if __name__ == '__main__':
-    if len(sys.argv) != 2:
-        print("Wrong Info passed")
-        sys.exit(1)
-    main(sys.argv[1])
-    
+    main()
  
